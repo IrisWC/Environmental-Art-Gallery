@@ -6,6 +6,7 @@ import Screens.ArtScreen;
 import processing.core.PApplet;
 import Screens.Screen;
 import java.util.*;
+import java.awt.Point;
 
 public class DrawingSurface extends PApplet {
 	
@@ -19,6 +20,8 @@ public class DrawingSurface extends PApplet {
 		screens.add(menu);
 		GalleryScreen gallery = new GalleryScreen(1600, 900, this);
 		screens.add(gallery);
+		ArtScreen cloudCities = new ArtScreen(1600, 900, this, "img\\Cloud Cities Art.png", "img\\Cloud Cities Description.png");
+		screens.add(cloudCities);
 		
 		currentScreen = screens.get(0);
 	}
@@ -42,4 +45,15 @@ public class DrawingSurface extends PApplet {
 	public void mousePressed() {
 		currentScreen.mousePressed();
 	}
+	
+	public void keyPressed() {
+		currentScreen.keyPressed();
+	}
+	
+	public Point recalculatePoint (Point original) {
+		float ratioX = (float)width / currentScreen.getWidth();
+		float ratioY = (float)height / currentScreen.getHeight();
+		return new Point((int)(original.getX()/ratioX) , (int)(original.getY()/ratioY));
+	}
+
 }
