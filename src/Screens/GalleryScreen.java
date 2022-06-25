@@ -1,5 +1,5 @@
 package Screens;
 
-public class GalleryScreen {
+public class GalleryScreen extends Screen{
 
 }
