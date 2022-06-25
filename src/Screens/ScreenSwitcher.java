@@ -1,5 +1,6 @@
 package Screens;
 
-public class ScreenSwitcher {
+public interface ScreenSwitcher {
 
+	public void switchScreen(int i);
 }
