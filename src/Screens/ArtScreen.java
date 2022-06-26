@@ -15,7 +15,7 @@ public class ArtScreen extends Screen{
 		super(width, height);
 		surface = drawer;
 		pictureFile = pic;
-		backButton = new Rectangle(20, 20, 100, 100);
+		backButton = new Rectangle(1480, 780, 100, 100);
 	}
 	
 	public void draw() {
@@ -29,7 +29,7 @@ public class ArtScreen extends Screen{
 		surface.fill(0);
 		surface.textSize(50);
 		surface.textAlign(surface.CENTER, surface.CENTER);
-		surface.text("<", 20, 10, 100, 100);
+		surface.text("<", 1480, 775, 100, 100);
 		
 	}
 	
