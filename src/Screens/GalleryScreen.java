@@ -43,7 +43,7 @@ public class GalleryScreen extends Screen{
 			int x = player.getX() + 50;
 			int y = player.getY() + 50;
 			for (int i = 0; i < statues.length; i++) {
-				if(Math.abs(x-statues[i].getX()-50) < 100) {
+				if(Math.abs(x-statues[i].getX()-50) < 150) {
 					if(Math.abs(y-statues[i].getY()) < 150) {
 						surface.switchScreen(i+4);
 					}
