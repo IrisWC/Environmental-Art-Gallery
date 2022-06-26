@@ -26,9 +26,9 @@ public class MenuScreen extends Screen{
 		surface.textAlign(surface.CENTER, surface.CENTER);
 		
 		surface.fill(255);
-		surface.rect(infoButton.x, infoButton.y, infoButton.width, infoButton.height, 50);
-		surface.rect(controlsButton.x, controlsButton.y, controlsButton.width, controlsButton.height, 50);
-		surface.rect(galleryButton.x, galleryButton.y, galleryButton.width, galleryButton.height, 50);
+		surface.rect(infoButton.x, infoButton.y, infoButton.width, infoButton.height, 30);
+		surface.rect(controlsButton.x, controlsButton.y, controlsButton.width, controlsButton.height, 30);
+		surface.rect(galleryButton.x, galleryButton.y, galleryButton.width, galleryButton.height, 30);
 		
 		surface.fill(0);
 		surface.textSize(30);

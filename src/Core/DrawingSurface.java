@@ -19,7 +19,7 @@ public class DrawingSurface extends PApplet {
 		screens.add(controls);
 		GalleryScreen gallery = new GalleryScreen(1600, 900, this);
 		screens.add(gallery);
-		ArtScreen cloudCities = new ArtScreen(1600, 900, this, "img\\Cloud Cities Art.png", "img\\Cloud Cities Description.png");
+		ArtScreen cloudCities = new ArtScreen(1600, 900, this, "img\\Cloud Cities.png");
 		screens.add(cloudCities);
 		
 		currentScreen = screens.get(0);
