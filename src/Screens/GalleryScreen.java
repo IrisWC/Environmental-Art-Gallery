@@ -11,10 +11,12 @@ public class GalleryScreen extends Screen{
 	public GalleryScreen(int width, int height, DrawingSurface drawer) {
 		super(width, height);
 		surface = drawer;
+		player = new Player(800, 450);
 	}
 	
 	public void draw() {
 		surface.image(surface.loadImage("img\\Background.png"), 0, 0, 1600, 900);
+		player.draw(surface);
 	}
 	
 	public void keyPressed() {
@@ -28,7 +30,11 @@ public class GalleryScreen extends Screen{
 			player.move(10, 0, 3);
 		
 		if(surface.key == ' ') {
-			surface.switchScreen(2);
+			surface.switchScreen(3);
 		}
+	}
+	
+	public void keyReleased() {
+		//player.stop();
 	}
 }

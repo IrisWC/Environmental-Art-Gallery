@@ -1,10 +1,7 @@
 package Core;
 
-import Screens.MenuScreen;
-import Screens.GalleryScreen;
-import Screens.ArtScreen;
+import Screens.*;
 import processing.core.PApplet;
-import Screens.Screen;
 import java.util.*;
 import java.awt.Point;
 
@@ -18,6 +15,8 @@ public class DrawingSurface extends PApplet {
 		
 		MenuScreen menu = new MenuScreen(1600, 900, this);
 		screens.add(menu);
+		ControlsScreen controls = new ControlsScreen(1600, 900, this);
+		screens.add(controls);
 		GalleryScreen gallery = new GalleryScreen(1600, 900, this);
 		screens.add(gallery);
 		ArtScreen cloudCities = new ArtScreen(1600, 900, this, "img\\Cloud Cities Art.png", "img\\Cloud Cities Description.png");

@@ -39,8 +39,10 @@ public class MenuScreen extends Screen{
 	
 	public void mousePressed() {
 		Point point = surface.recalculatePoint(new Point(surface.mouseX, surface.mouseY));
-		if (galleryButton.contains(point))
+		if (controlsButton.contains(point))
 			surface.switchScreen(1);
+		else if (galleryButton.contains(point))
+			surface.switchScreen(2);
 		
 	}
 }
