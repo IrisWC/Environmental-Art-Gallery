@@ -25,7 +25,7 @@ public class DrawingSurface extends PApplet {
 		screens.add(cloudCities);
 		ArtScreen iceWatch = new ArtScreen(1600, 900, this, "img\\Ice Watch.png");
 		screens.add(iceWatch);
-		ArtScreen climateChange = new ArtScreen(1600, 900, this, "img\\Ninth Wave.png");
+		ArtScreen climateChange = new ArtScreen(1600, 900, this, "img\\Climate Change.png");
 		screens.add(climateChange);
 		ArtScreen plasticOcean = new ArtScreen(1600, 900, this, "img\\Plastic Ocean.png");
 		screens.add(plasticOcean);
