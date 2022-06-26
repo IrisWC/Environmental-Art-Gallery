@@ -14,12 +14,12 @@ public class GalleryScreen extends Screen{
 		surface = drawer;
 		player = new Player(800, 450);
 		statues = new Artwork[6];
-		statues[0] = new Artwork(100, 650, 0);
-		statues[1] = new Artwork(100, 250, 1);
-		statues[2] = new Artwork(600, 250, 2);
-		statues[3] = new Artwork(1000, 250, 3);
-		statues[4] = new Artwork(1400, 250, 4);
-		statues[5] = new Artwork(1400, 650, 5);
+		statues[0] = new Artwork(200, 650, 0);
+		statues[1] = new Artwork(200, 250, 1);
+		statues[2] = new Artwork(550, 250, 2);
+		statues[3] = new Artwork(950, 250, 3);
+		statues[4] = new Artwork(1300, 250, 4);
+		statues[5] = new Artwork(1300, 650, 5);
 	}
 	
 	public void draw() {
