@@ -1,3 +1,6 @@
+package Assets;
+
+import Core.DrawingSurface;
 
 public class Artwork {
 
@@ -20,5 +23,9 @@ public class Artwork {
 	
 	public int getPage() {
 		return pageNum;
+	}
+	
+	public void draw(DrawingSurface surface) {
+		surface.image(surface.loadImage("img\\Pedestal.png"), x, y, 100, 100);
 	}
 }

@@ -33,15 +33,15 @@ public class Player {
 		switch(dir) {
 		case 0:
 			if(animation == 0) 
-				surface.image(surface.loadImage("img\\Player\\Back 1.png"), x, y, 50, 50);
+				surface.image(surface.loadImage("img\\Player\\Back 1.png"), x, y, 100, 100);
 			else if(animation == 1) 
-				surface.image(surface.loadImage("img\\Player\\Back 2.png"), x, y, 50, 50);
+				surface.image(surface.loadImage("img\\Player\\Back 2.png"), x, y, 100, 100);
 			else if(animation == 2) 
-				surface.image(surface.loadImage("img\\Player\\Back 3.png"), x, y, 50, 50);
+				surface.image(surface.loadImage("img\\Player\\Back 3.png"), x, y, 100, 100);
 			break;
 		case 1:
 			if(animation == 0) 
-				surface.image(surface.loadImage("img\\Player\\Left 1.png"), x, y, 50, 50);
+				surface.image(surface.loadImage("img\\Player\\Left 1.png"), x, y, 100, 100);
 			else if(animation == 1) 
 				surface.image(surface.loadImage("img\\Player\\Left 2.png"), x, y, 50, 50);
 			else if(animation == 2) 
@@ -49,7 +49,7 @@ public class Player {
 			break;
 		case 2:
 			if(animation == 0) 
-				surface.image(surface.loadImage("img\\Player\\Front 1.png"), x, y, 50, 50);
+				surface.image(surface.loadImage("img\\Player\\Front 1.png"), x, y, 100, 100);
 			else if(animation == 1) 
 				surface.image(surface.loadImage("img\\Player\\Front 2.png"), x, y, 50, 50);
 			else if(animation == 2) 
@@ -57,7 +57,7 @@ public class Player {
 			break;
 		case 3:
 			if(animation == 0) 
-				surface.image(surface.loadImage("img\\Player\\Right 1.png"), x, y, 50, 50);
+				surface.image(surface.loadImage("img\\Player\\Right 1.png"), x, y, 100, 100);
 			else if(animation == 1) 
 				surface.image(surface.loadImage("img\\Player\\Right 2.png"), x, y, 50, 50);
 			else if(animation == 2) 
