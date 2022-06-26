@@ -33,4 +33,7 @@ public abstract class Screen {
 		
 	}
 	
+	public void keyReleased() {
+		
+	}
 }
