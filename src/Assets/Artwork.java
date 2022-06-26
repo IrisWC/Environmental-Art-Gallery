@@ -27,5 +27,6 @@ public class Artwork {
 	
 	public void draw(DrawingSurface surface) {
 		surface.image(surface.loadImage("img\\Pedestal.png"), x, y, 100, 100);
+		surface.image(surface.loadImage("img\\Sphere " + (pageNum+1) + ".png"), x, y-75, 100, 100);
 	}
 }
