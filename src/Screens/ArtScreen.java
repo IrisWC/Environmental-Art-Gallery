@@ -36,7 +36,7 @@ public class ArtScreen extends Screen{
 	public void mousePressed() {
 		Point point = surface.recalculatePoint(new Point(surface.mouseX, surface.mouseY));
 		if (backButton.contains(point))
-			surface.switchScreen(2);
+			surface.switchScreen(3);
 		
 	}
 }

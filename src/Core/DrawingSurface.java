@@ -15,6 +15,8 @@ public class DrawingSurface extends PApplet {
 		
 		MenuScreen menu = new MenuScreen(1600, 900, this);
 		screens.add(menu);
+		InfoScreen info = new InfoScreen(1600, 900, this);
+		screens.add(info);
 		ControlsScreen controls = new ControlsScreen(1600, 900, this);
 		screens.add(controls);
 		GalleryScreen gallery = new GalleryScreen(1600, 900, this);
