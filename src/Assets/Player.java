@@ -16,9 +16,20 @@ public class Player {
 	}
 	
 	public void move(int xmotion, int ymotion, int direction) {
-		x += xmotion;
-		y += ymotion;
-		dir = direction;
+		if(x >= 0 && x <= 1500 && y >= 200 && y <= 800) {
+			x += xmotion;
+			y += ymotion;
+			dir = direction;
+		} else {
+			if(x <= 0) 
+				x = 1;
+			else if (x >= 1500)
+				x = 1499;
+			else if (y <= 200) 
+				y = 201;
+			else if (y >= 800) 
+				y = 799;
+		}
 //		if(animation == 0) {
 //			animation = 1;
 //		}
